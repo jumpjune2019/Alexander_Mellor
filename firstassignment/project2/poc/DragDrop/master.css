@@ -1,0 +1,42 @@
+div.terms{
+  background-color: #ff0000;
+  width: 50%;
+  float: left;
+}
+div.definitions{
+  background-color: #0000ff;
+  width: 50%;
+  float: right;
+}
+div.dragObj{
+  padding: 10px;
+  border: 1px solid black;
+  min-height: 50px;
+  max-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  cursor: grab;
+}
+div.dropObj{
+  padding: 10px;
+  border: 1px solid black;
+  min-height: 50px;
+  max-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  cursor: pointer;
+}
+div.container{
+
+}
+h1.title{
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+/* **** DEFAULT CSS ATTRIBUTES FOR HTML TAGS **** */
+html, body {
+	font-family: Arial, sans serif;
+	font-size: 1em;
+	color: #000000;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100%;
+	background-color: #000000;
+	cursor: no-drop;
+}
+.clearfix_no_margin {
+	clear: both;
+}
+.clearfix {
+	clear: both;
+	margin-bottom: 10px;
+}
