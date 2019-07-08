@@ -1,0 +1,10 @@
+INDEX VERSION 1.131+/home/miwwge/java_training/assignements/java_001/.metadata/.plugins/org.eclipse.jdt.core
+855709060.index
+4154263650.index
+586008997.index
+3436727285.index
+1392080472.index
+914595108.index
+224660176.index
+603509956.index
+2723969535.index

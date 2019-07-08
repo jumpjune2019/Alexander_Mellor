@@ -1,0 +1,15 @@
+import java.lang.Math;
+import java.util.Scanner;
+public class Main {
+	private static double roll6SidedDie() {
+		// Function that returns a number between 1 and 6 to simulate a 6 sided die roll
+		return Math.floor(Math.random() * 6) + 1;
+	}
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Press any key to throw a die and press Enter (or Q and Enter to quit)");
+		String answer = in.nextLine().toLowerCase();
+		System.out.println((char)answer);
+		System.out.println("You have rolled a " + (int)roll6SidedDie());
+	}
+}

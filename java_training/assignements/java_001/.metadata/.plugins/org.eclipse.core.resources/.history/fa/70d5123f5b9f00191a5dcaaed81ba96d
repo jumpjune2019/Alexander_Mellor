@@ -1,0 +1,119 @@
+import java.lang.Math;
+import java.util.HashMap;
+import java.util.Map;
+public class Main {
+	private static double roll6SidedDie() {
+		// Function that returns a number between 1 and 6 to simulate a 6 sided die roll
+		return Math.floor(Math.random() * 6) + 1;
+	}
+	public static void main(String[] args) {
+		Map<String,Integer> tally = new HashMap<String, Integer>();	// Initializes a map between a string key and an int value
+		double dice1;
+		double dice2;
+		// Sets the default values for the map
+		tally.put("Double 1's", 0);
+		tally.put("1 and 2", 0);
+		tally.put("1 and 3", 0);
+		tally.put("1 and 4", 0);
+		tally.put("1 and 5", 0);
+		tally.put("1 and 6", 0);
+		tally.put("Double 2's", 0);
+		tally.put("2 and 3", 0);
+		tally.put("2 and 4", 0);
+		tally.put("2 and 5", 0);
+		tally.put("2 and 6", 0);
+		tally.put("Double 3's", 0);
+		tally.put("3 and 4", 0);
+		tally.put("3 and 5", 0);
+		tally.put("3 and 6", 0);
+		tally.put("Double 4's", 0);
+		tally.put("4 and 5", 0);
+		tally.put("4 and 6", 0);
+		tally.put("Double 5's", 0);
+		tally.put("5 and 6", 0);
+		tally.put("Double 6's", 0);
+		for(int x = 0; x < 1000; x++) {
+			// Rolls 2 die 1000 times and tallies all combinations
+			dice1 = roll6SidedDie();
+			dice2 = roll6SidedDie();
+			if(dice1 == 1 && dice2 ==1) {
+				// Double 1's
+			}else if((dice1 == 1 && dice2 == 2) || (dice1 == 2 && dice2 == 1)) {
+				// Rolled a 1 and a 2
+			}else if((dice1 == 1 && dice2 == 3) || (dice1 == 3 && dice2 == 1)) {
+				// Rolled a 1 and a 3
+			}else if((dice1 == 1 && dice2 == 4) || (dice1 == 4 && dice2 == 1)) {
+				// Rolled a 1 and a 4
+			}else if((dice1 == 1 && dice2 == 5) || (dice1 == 5 && dice2 == 1)) {
+				// Rolled a 1 and a 5
+			}else if((dice1 == 1 && dice2 == 6) || (dice1 == 6 && dice2 == 1)) {
+				// Rolled a 1 and a 6
+			}else if(dice1 == 2 && dice2 == 2) {
+				// Double 2's
+			}else if((dice1 == 2 && dice2 == 3) || (dice1 == 3 && dice2 == 2)) {
+				// Rolled a 2 and a 3
+			}else if((dice1 == 2 && dice2 == 4) || (dice1 == 4 && dice2 == 2)) {
+				// Rolled a 2 and a 4
+			}else if((dice1 == 2 && dice2 == 5) || (dice1 == 5 && dice2 == 2)) {
+				// Rolled a 2 and a 5
+			}else if((dice1 == 2 && dice2 == 6) || (dice1 == 6 && dice2 == 2)) {
+				// Rolled a 2 and a 6
+			}else if(dice1 == 3 && dice2 == 3) {
+				// Double 3's
+			}else if((dice1 == 3 && dice2 == 4) || (dice1 == 4 && dice2 == 3)) {
+				// Rolled a 3 and a 4
+			}else if((dice1 == 3 && dice2 == 5) || (dice1 == 5 && dice2 == 3)) {
+				// Rolled a 3 and a 5
+			}else if((dice1 == 3 && dice2 == 6) || (dice1 == 6 && dice2 == 3)) {
+				// Rolled a 3 and a 6
+			}else if(dice1 == 4 && dice2 == 4) {
+				// Double 4's
+			}else if((dice1 == 4 && dice2 == 5) || (dice1 == 5 && dice2 == 4)) {
+				// Rolled a 4 and a 5
+			}else if((dice1 == 4 && dice2 == 6) || (dice1 == 6 && dice2 == 4)) {
+				// Rolled a 4 and a 6
+			}else if(dice1 == 5 && dice2 == 5) {
+				// Double 5's
+			}else if((dice1 == 5 && dice2 == 6) || (dice1 == 6 && dice2 == 5)) {
+				// Rolled a 5 and a 6
+			}else if(dice1 == 6 && dice2 == 6) {
+				// Double 6's
+			}
+		}
+		// Inputs tally values into tallyOutput for sorting and then output
+		tallyOutput[0][1] = "Double 1's";
+		tallyOutput[1][1] = "1 and 2";
+		tallyOutput[2][1] = "1 and 3";
+		tallyOutput[3][1] = "1 and 4";
+		tallyOutput[4][1] = "1 and 5";
+		tallyOutput[5][1] = "1 and 6";
+		tallyOutput[6][1] = "Double 2's";
+		tallyOutput[7][1] = "2 and 3";
+		tallyOutput[8][1] = "2 and 4";
+		tallyOutput[9][1] = "2 and 5";
+		tallyOutput[10][1] = "2 and 6";
+		tallyOutput[11][1] = "Double 3's";
+		tallyOutput[12][1] = "3 and 4";
+		tallyOutput[13][1] = "3 and 5";
+		tallyOutput[14][1] = "3 and 6";
+		tallyOutput[15][1] = "Double 4's";
+		tallyOutput[16][1] = "4 and 5";
+		tallyOutput[17][1] = "4 and 6";
+		tallyOutput[18][1] = "Double 5's";
+		tallyOutput[19][1] = "5 and 6";
+		tallyOutput[20][1] = "Double 6's";
+		// Input tallies into output
+		for(int x = 0; x < tallyOutput.length; x++) {
+			tallyOutput[x][0] = String.valueOf(tally[x]);
+		}
+		for(int x = 0; x < tallyOutput.length; x++) {
+			System.out.println(tallyOutput[x][1] + ": " + tallyOutput[x][0]);
+		}
+		// Sorts the occurrences of dice rolls from most to least
+		
+		System.out.println("1000 Random 2 Dice Toss Stats:");
+		for(int x = 0; x < tallyOutput.length; x++) {
+			System.out.println(tallyOutput[x][1] + ": " + tallyOutput[x][0]);
+		}
+	}
+}

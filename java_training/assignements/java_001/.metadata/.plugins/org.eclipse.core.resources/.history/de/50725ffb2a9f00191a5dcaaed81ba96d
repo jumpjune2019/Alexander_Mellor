@@ -1,0 +1,12 @@
+import java.lang.Math;
+public class HeadsOrTails {
+	public static void main(String[] args) {
+		double testRand = Math.floor(Math.random() * 2) + 1;
+		System.out.println(testRand);
+		if(testRand == 1) {
+			System.out.println("The Coin Flip is: Head");
+		}else if(testRand == 2) {
+			System.out.println("The Coin Flip is: Tail");
+		}
+	}
+}

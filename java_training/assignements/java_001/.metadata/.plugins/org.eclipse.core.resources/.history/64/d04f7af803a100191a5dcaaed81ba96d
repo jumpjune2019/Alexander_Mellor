@@ -1,0 +1,81 @@
+import java.util.Scanner;
+public class Main {
+	private static byte roll6SidedDie() {
+		// Function that returns a number between 1 and 6 to simulate a 6 sided die roll
+		int test = (int)Math.floor(Math.random() * 6) + 1;
+		byte roll = (byte)test;
+		return roll;
+	}
+	private static void computerWin(byte playerArr[], byte computerArr[]) {
+		System.out.println("You have rolled a " + playerArr[0] + " and " + playerArr[1] + " > the ");
+		System.out.println("I have rolled a " + computerArr[0] + " and " + computerArr[1] + " > the ");
+		System.out.println("I win!!!");
+		System.out.println("Wanna try again? Press any key and ENTER to throw your dice or press (Q or q) to quit");
+		return;
+	}
+	private static void computerWinDouble(byte playerArr[], byte computerArr[]) {
+		System.out.println("You have rolled a " + playerArr[0] + " and " + playerArr[1] + " > the ");
+		System.out.println("I have rolled a " + computerArr[0] + " and " + computerArr[1] + " > the ");
+		System.out.println("Damn! I win on a Double! Ah! I pity you fool!");
+		System.out.println("Wanna try again? Press any key and ENTER to throw your dice or press (Q or q) to quit");
+		return;
+	}
+	private static void computerLoss(byte playerArr[], byte computerArr[]) {
+		System.out.println("You have rolled a " + playerArr[0] + " and " + playerArr[1] + " > the ");
+		System.out.println("I have rolled a " + computerArr[0] + " and " + computerArr[1] + " > the ");
+		System.out.println("You win!!!");
+		System.out.println("Did you cheat?? Gimme another try, c’mon Press any key and ENTER to throw your dice or press (Q or q) to quit");
+		return;
+	}
+	private static void computerLossDouble(byte playerArr[], byte computerArr[]) {
+		System.out.println("You have rolled a " + playerArr[0] + " and " + playerArr[1] + " > the ");
+		System.out.println("I have rolled a " + computerArr[0] + " and " + computerArr[1] + " > the ");
+		System.out.println("Damn! You win on a Double! What Luck!");
+		System.out.println("Did you cheat?? Gimme another try, c’mon Press any key and ENTER to throw your dice or press (Q or q) to quit");
+		return;
+	}
+	private static void trueTie(byte playerArr[], byte computerArr[]) {
+		System.out.println("You have rolled a " + playerArr[0] + " and " + playerArr[1] + " > the ");
+		System.out.println("I have rolled a " + computerArr[0] + " and " + computerArr[1] + " > the ");
+		System.out.println("Stalemate! You’re tough, let’s try for a tie-breaker Press any key and ENTER to throw your dice or press (Q or q) to quit");
+		return;
+	}
+	public static void main(String[] args) {
+		char answer;
+		byte player[] = new byte[2];
+		byte computer[] = new byte[2];
+		System.out.println("Welcome to the dice throw challenge!");
+		System.out.println("Do you feel lucky? “Punk”... Do ya?");
+		System.out.println("Press any key and ENTER to throw your dice or press (Q or q) to chicken your butt off...");
+		Scanner in = new Scanner(System.in);
+		answer = in.nextLine().toLowerCase().charAt(0);	// Gets a string from input object, converts string to lower case, takes the first char object in the string, Closes the input object, Returns the char
+		if(answer == 'q') {
+			// Checks if user input is equivalent to q and exits the program if true
+			System.out.println("See ya later alligator!");
+			System.exit(0);
+		}
+		do {
+			System.out.println("Rolling the dice!!");
+			player[0] = roll6SidedDie();
+			player[1] = roll6SidedDie();
+			computer[0] = roll6SidedDie();
+			computer[1] = roll6SidedDie();
+			
+//			if() {
+//				computerWin(player, computer);
+//			}else if() {
+//				computerWinDouble(player, computer);
+//			}else if() {
+//				computerLoss(player, computer);
+//			}else if() {
+//				computerLossDouble(player, computer);
+//			}else if() {
+//				trueTie(player, computer);
+//			}
+			
+			answer = in.nextLine().toLowerCase().charAt(0);	// Gets a string from input object, converts string to lower case, takes the first char object in the string, Closes the input object, Returns the char
+		}while(answer == 'y');
+		in.close();
+		System.out.println("Thanks for being a sport! laters!");
+	}
+}

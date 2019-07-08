@@ -1,0 +1,16 @@
+
+public class Main {
+	public static void main(String[] args) {
+		String diceRoll[][] = {
+				{"Snake Eyes", "Astrailian Yo", "Little Jo From Kokomo", "No Field Five", "Easy Six", "Six One You're Done"},
+				{"Ace Caught a Duece", "Ballarena", "The Fever", "Jimmie Hicks", "Benny Blue", "Easy Eight"},
+				{"Easy Four", "OJ", "Brooklen Forest", "Big Red", "Eighter From Decatur", "Nina From Pasadena"},
+				{"Little Phoebe", "Easy Six", "Skinny McKinney", "Square Pair", "Railroad Nine", "Big One On The End"},
+				{"Sixie From Dixie", "Skinny Dugan", "Easy Eight", "Jessie James", "Puppy Paws", "Yo"},
+				{"The Devil", "Easy Eight", "Lou Brown", "Tennessee", "Six Five No Jive", "Midnight"}
+		};
+		for(short x = 0; x < 6; x++) {
+			System.out.print(diceRoll[0][x]);
+		}
+	}
+}

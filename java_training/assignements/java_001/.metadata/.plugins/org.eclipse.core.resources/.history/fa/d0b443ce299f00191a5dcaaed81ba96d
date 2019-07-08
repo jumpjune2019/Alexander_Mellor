@@ -1,0 +1,7 @@
+import java.lang.Math;
+public class HeadsOrTails {
+	public static void main(String[] args) {
+		double testRand = (Math.random() * 2);
+		System.out.println(testRand);
+	}
+}

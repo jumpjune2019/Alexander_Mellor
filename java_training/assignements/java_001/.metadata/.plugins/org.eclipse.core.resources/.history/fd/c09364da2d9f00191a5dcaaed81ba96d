@@ -1,0 +1,22 @@
+import java.lang.Math;
+public class Main {
+	private static double getRandomNum() {
+		return Math.floor(Math.random() * 2) + 1;
+	}
+	private static String getCoinFlip(double randCoin) {
+		if(randCoin == 1) {
+			return "Head";
+		}else if(randCoin == 2){
+			return "Tail";
+		}else {
+			return "ERROR";
+		}
+	}
+	public static void main(String[] args) {
+		int tally[] = new int[2];
+		System.out.println("1000 Coin Flips.");
+		for(int i = 0; i < 1000; i++) {
+			System.out.println(i);
+		}
+	}
+}
