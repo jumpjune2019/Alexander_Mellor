@@ -1,0 +1,39 @@
+import java.lang.Math;
+import java.util.Scanner;
+public class Main {
+	private static double roll6SidedDie() {
+		// Function that returns a number between 1 and 6 to simulate a 6 sided die roll
+		return Math.floor(Math.random() * 6) + 1;
+	}
+	private static char getUserAnswerChar() {
+		/*
+		 * Creates a new input object
+		 * Gets a string from input object, converts string to lower case, takes the first char object in the string
+		 * Closes the input object
+		 * Returns the char
+		 */
+		Scanner in = new Scanner(System.in);
+		char answer = in.nextLine().toLowerCase().charAt(0);
+		in.close();
+		return answer;
+	}
+	private static void clearScreen() {
+		// Clears a terminal screen
+		System.out.print("\033[H\033[2J");  
+		System.out.flush();
+	}
+	public static void main(String[] args) {
+		char answer;
+		System.out.println("Press any key to throw a die and press Enter (or Q and Enter to quit)");
+		answer = getUserAnswerChar();
+		if(answer == 'q') {
+//			System.exit(0);
+			return;
+		}
+		do {
+			System.out.println("You have rolled a " + (int)roll6SidedDie());
+			System.out.println("Play Again? (Y or y) and Enter, any other key and Enter to Quit");
+			answer = getUserAnswerChar();
+		}while(answer == 'y');
+	}
+}

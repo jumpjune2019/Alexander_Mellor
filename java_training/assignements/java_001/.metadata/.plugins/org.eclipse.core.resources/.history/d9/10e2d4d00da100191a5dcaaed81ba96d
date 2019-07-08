@@ -1,0 +1,23 @@
+public class Main {
+	private static boolean arrayHasExactMach(String stringArr[], String stringToCheck, boolean caseSensitive) {
+		boolean found;
+		if(caseSensitive == true) {
+			
+		}else if(caseSensitive == false) {
+			
+		}
+		return found;
+	}
+	private static int[] indexOfOccuranceInArray(String stringArr[], String stringToCheck, boolean caseSensitive) {
+		int found[];
+		if(caseSensitive == true) {
+			
+		}else if(caseSensitive == false) {
+			
+		}
+		return found;
+	}
+	public static void main(String[] args) {
+		String myList[] = {"Bozo", "FooBar", "Delta", "Foozball", "Demo", "Money", "Zoo"};
+	}
+}

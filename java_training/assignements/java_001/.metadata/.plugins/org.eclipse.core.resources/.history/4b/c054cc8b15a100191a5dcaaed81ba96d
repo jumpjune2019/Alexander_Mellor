@@ -1,0 +1,72 @@
+package arrayutils;
+
+public class ArrayUtils {
+	private static boolean arrayHasExactMatch(String stringArr[], String stringToCheck, boolean caseSensitive) {
+		if(caseSensitive == true) {
+			for(String s : stringArr) {
+				if(s.equals(stringToCheck)) {
+					return true;
+				}
+			}
+		}else if(caseSensitive == false) {
+			for(String s : stringArr) {
+				if(s.toLowerCase().equals(stringToCheck.toLowerCase())) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	private static int[] indexOfOccuranceInArray(String stringArr[], String stringToCheck, boolean caseSensitive) {
+		int found[];
+		if(caseSensitive == true) {
+			byte checkVal = 0;
+			for(String s : stringArr) {
+				if(s.contentEquals(stringToCheck)) {
+					checkVal++;
+				}
+			}
+			if(checkVal > 0) {
+				found = new int[checkVal];
+				byte counter = 0;
+				for(byte x = 0; x < stringArr.length; x++) {
+					if(stringArr[x].contentEquals(stringToCheck)) {
+						found[counter] = x;
+						counter++;
+					}
+				}
+				return found;
+			}else {
+				found = new int[1];
+				found[0] = -1;
+				return found;
+			}
+		}else if(caseSensitive == false) {
+			byte checkVal = 0;
+			for(String s : stringArr) {
+				if(s.toLowerCase().contentEquals(stringToCheck.toLowerCase())) {
+					checkVal++;
+				}
+			}
+			if(checkVal > 0) {
+				found = new int[checkVal];
+				byte counter = 0;
+				for(byte x = 0; x < stringArr.length; x++) {
+					if(stringArr[x].toLowerCase().contentEquals(stringToCheck.toLowerCase())) {
+						found[counter] = x;
+						counter++;
+					}
+				}
+				return found;
+			}else {
+				found = new int[1];
+				found[0] = -1;
+				return found;
+			}
+		}else {
+			found = new int[1];
+			found[0] = -1;
+			return found;
+		}
+	}
+}

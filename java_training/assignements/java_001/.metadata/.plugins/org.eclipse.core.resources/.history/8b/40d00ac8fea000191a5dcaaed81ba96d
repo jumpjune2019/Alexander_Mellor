@@ -1,0 +1,13 @@
+
+public class Main {
+	private static byte roll6SidedDie() {
+		// Function that returns a number between 1 and 6 to simulate a 6 sided die roll
+		int test = (int)Math.floor(Math.random() * 6) + 1;
+		byte roll = (byte)test;
+		return roll;
+	}
+	public static void main(String[] args) {
+		System.out.println("Welcome to the dice throw challenge!");
+		System.out.println("Do you feel lucky? “Punk”... Do ya?");
+	}
+}

@@ -1,0 +1,22 @@
+
+public class Main {
+	public static void main(String[] args) {
+		byte loopControl = 7;
+		String diceRoll[][] = {
+				{"\t", "1\t\t\t", "2\t\t\t", "3\t", "4\t", "5\t", "6\t"},
+				{"1\t", "Snake Eyes\t\t", "Astrailian Yo", "Little Jo From Kokomo", "No Field Five", "Easy Six", "Six One You're Done"},
+				{"2\t", "Ace Caught a Duece\t", "Ballarena", "The Fever", "Jimmie Hicks", "Benny Blue", "Easy Eight"},
+				{"3\t", "Easy Four\t", "OJ", "Brooklen Forest", "Big Red", "Eighter From Decatur", "Nina From Pasadena"},
+				{"4\t", "Little Phoebe\t", "Easy Six", "Skinny McKinney", "Square Pair", "Railroad Nine", "Big One On The End"},
+				{"5\t", "Sixie From Dixie\t", "Skinny Dugan", "Easy Eight", "Jessie James", "Puppy Paws", "Yo"},
+				{"6\t", "The Devil\t", "Easy Eight", "Lou Brown", "Tennessee", "Six Five No Jive", "Midnight"}
+		};
+		System.out.println("Dice Combination Label Matrix");
+		for(byte x = 0; x < loopControl; x++) {
+			for(byte y = 0; y < loopControl; y++) {
+				System.out.print(diceRoll[x][y]);
+			}
+			System.out.print("\n");
+		}
+	}
+}

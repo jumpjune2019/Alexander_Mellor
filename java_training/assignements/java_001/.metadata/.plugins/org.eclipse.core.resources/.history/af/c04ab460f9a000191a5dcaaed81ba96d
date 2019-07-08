@@ -1,0 +1,13 @@
+
+public class Main {
+	public static void main(String[] args) {
+		String diceRoll[][] = {
+				{"Snake Eyes", "Astrailian Yo", "Little Jo From Kokomo", "No Field Five", "Easy Six", ""},
+				{"", "", "", "", "", ""},
+				{"", "", "", "", "", ""},
+				{"", "", "", "", "", ""},
+				{"", "", "", "", "", ""},
+				{"", "", "", "", "", ""}
+		};
+	}
+}
