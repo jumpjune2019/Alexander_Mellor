@@ -119,7 +119,7 @@ public class Main {
 				}
 			}while(doRowOver);
 		}
-		System.out.println("Do You want the output to file (f) or console (c) or both (b)?");
+		System.out.println("Do You want the output to file (f) or console (c) or both (any other key)?");
 		userInputString = getUserInput();
 		closeReader();	// Closes the buffered reader on the console.
 		if(userInputString.toLowerCase().charAt(0) == 'c') {
