@@ -12,7 +12,7 @@ public class TrafficLightThread implements Runnable {
 		// Begin Execution of Thread
 		try {
 			while(!stopped) {
-				for(TrafficLightSimulator.Light color : TrafficLightSimulator.Light.values()) {
+				for(Light color : Light.values()) {
 					synchronized(this) {
 						if(stopped) {
 							break;

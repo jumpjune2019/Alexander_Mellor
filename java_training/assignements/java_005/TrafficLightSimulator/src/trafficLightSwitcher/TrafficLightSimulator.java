@@ -5,9 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class TrafficLightSimulator {
-	enum Light{
-		Green, Yellow, Red;
-	}
 	public static void main(String[] args) {
 		String inputStr;
 		System.out.println("Double tap Enter Key to end");
