@@ -1,5 +1,5 @@
 # Arrow Operator 101
-##### Done By:
+#### Done By:
 * Alexander Mellor
 * Marilyn John
 ## Key Features
@@ -21,4 +21,4 @@
 * Cannot be used as constructors.
 * Cannot be used as generators.
 * No local variable arguments.
-* No line breaks between parameters and the arrow.
+* No line breaks allowed between parameters and the arrow.
