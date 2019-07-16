@@ -9,12 +9,13 @@ import javax.swing.JTextField;
 public class Main {
 	public static void main(String[] args) {
 		System.out.println("Main thread Starting.");
+		// Create the thread objects
 		MyThread mt1 = new MyThread("1");
 		MyThread mt2 = new MyThread("2");
 		MyThread mt3 = new MyThread("3");
 		MyThread mt4 = new MyThread("4");
 		MyThread mt5 = new MyThread("5");
-		
+		// Create the gui for key listening for use in logic
 		JFrame frame = new JFrame("Key Listener");
 		Container contentPane = frame.getContentPane();
 		KeyListener listener = new KeyListener() {
@@ -29,6 +30,7 @@ public class Main {
 			@Override
 			public void keyTyped(KeyEvent event) {
 			}
+			// Logic for controlling the flow of the threads.
 			private void sendCommands(KeyEvent e) {
 				int code = e.getKeyCode();
 				if(threadInControl == 0) {
@@ -359,7 +361,7 @@ public class Main {
 		contentPane.add(textField, BorderLayout.NORTH);
 		frame.pack();
 		frame.setVisible(true);
-		
+		// Start of the main thread logic loop.
 		do {
 			try {
 				Thread.sleep(100);

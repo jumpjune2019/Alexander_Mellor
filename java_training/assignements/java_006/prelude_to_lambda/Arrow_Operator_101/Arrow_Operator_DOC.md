@@ -1,0 +1,24 @@
+# Arrow Operator 101
+#### Done By:
+* Alexander Mellor
+* Marilyn John
+## Key Features
+* More Concise Code.
+* Simpler Function Scoping and this Keyword.
+## Pros And Cons
+### Pros
+* Use on list items.
+* Management of Asynchronous Code.
+* The encapsulation of object transformations.
+* Avoid Typing the function and return Keywords and curly brackets.
+* Inherits the this object from the parent scope.
+* No Argument binding.
+### Cons
+* Use of methods on objects leaves the function behaving in ways that are not intuitive, inhibiting testing and creating problems if you attempt to subclass/use this object as a prototype.
+* Due to the fact that arrow functions are anonymous, they return bad stack traces.
+* Dynamic binding of this will not work.
+* Can make code harder to read.
+* Cannot be used as constructors.
+* Cannot be used as generators.
+* No local variable arguments.
+* No line breaks allowed between parameters and the arrow.
