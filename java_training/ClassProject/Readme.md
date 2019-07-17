@@ -1,15 +1,15 @@
-# Seat/Client Assignment
+# **Seat/Client Assignment**
 
 ## Goals of the Project
 To create an application which assigns clients to seats similar to a booking system for a movie theater.
 
-## Team Members
+### *Team Members*
 - Alexander Mellor
 - Victoria Chmielewski
 - Yvonne Ubak
 - Deron Franklin Sobers II
 
-## Project Features
+## **Project Features**
 
 ### Core Features
 - User Accounts
@@ -34,5 +34,5 @@ To create an application which assigns clients to seats similar to a booking sys
 - Room configuration
   - Exclude Specific Seats
 
-### Additional Info
+### *Additional Info*
 ![Flow Chart](documentation/Flowchart_MovieBooking.png)
