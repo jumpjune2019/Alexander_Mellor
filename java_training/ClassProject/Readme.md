@@ -32,7 +32,7 @@ To create an application which assigns clients to seats similar to a booking sys
 
 ### Optional Features
 - Room configuration
- - Exclude Specific Seats
+  - Exclude Specific Seats
 
 ### Additional Info
 ![Flow Chart](documentation/Flowchart_MovieBooking.png)
